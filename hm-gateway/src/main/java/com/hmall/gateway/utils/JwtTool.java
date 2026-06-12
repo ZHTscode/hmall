@@ -1,4 +1,4 @@
-package com.hmall.utils;
+package com.hmall.gateway.utils;
 
 import cn.hutool.core.exceptions.ValidateException;
 import cn.hutool.jwt.JWT;
@@ -73,7 +73,7 @@ public class JwtTool {
 
         // 5.数据解析
         try {
-           return Long.valueOf(userPayload.toString());
+            return Long.valueOf(userPayload.toString());
         } catch (RuntimeException e) {
             // 数据格式有误
             throw new UnauthorizedException("无效的token");
