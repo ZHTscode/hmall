@@ -7,13 +7,7 @@ feign:
     enabled: true # 开启Feign的Sentinel功能
 hm:
   db:
-    database: hm-item
+    database: hm-trade
   swagger:
     title: "黑马商城交易管理接口文档"
     package: "com.hmall.trade.controller"
-spring:
-  cloud:
-    sentinel:
-      transport:
-        dashboard: localhost:8090
-      http-method-specify: true # 设置请求方式作为资源名称

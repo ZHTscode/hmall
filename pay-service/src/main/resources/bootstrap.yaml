@@ -1,6 +1,6 @@
 spring:
   application:
-    name: trade-service
+    name: pay-service
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848 # nacos地址
@@ -12,4 +12,3 @@ spring:
           - data-id: shared-swagger.yaml
           - data-id: shared-seata.yaml
           - data-id: shared-rabbitmq.yaml
-          - data-id: shared-sentinel.yaml
